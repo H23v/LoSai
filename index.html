@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identikit Personaggio</title>
+  <style>
+    /* Font e colori */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #faf9f7;
+      color: #4a453f;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 16px;
+    }
+    .card {
+      width: 100%;
+      max-width: 400px;
+      border: 2px dashed #ccc;
+      padding: 16px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .photo {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .section {
+      margin-top: 16px;
+    }
+    .section-title {
+      margin-bottom: 4px;
+      font-weight: 700;
+      font-size: 1.1em;
+      color: #796855;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .section-content {
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 0.95em;
+    }
+    .bordered {
+      border: 1px dashed #ddd;
+      padding: 12px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <!-- Foto del personaggio -->
+    <img src="https://via.placeholder.com/400x250.png?text=Foto+Personaggio" alt="Foto Personaggio" class="photo">
+
+    <!-- Nome -->
+    <div class="section">
+      <div class="section-title">Nome</div>
+      <div class="section-content bordered">Nome del Personaggio</div>
+    </div>
+
+    <!-- Carattere -->
+    <div class="section">
+      <div class="section-title">Carattere</div>
+      <div class="section-content bordered">
+        Descrizione del carattere: gentile, coraggioso, creativo...
+      </div>
+    </div>
+
+    <!-- Parentela -->
+    <div class="section">
+      <div class="section-title">Parente</div>
+      <div class="section-content bordered">
+        Madre: Nome Madre<br>
+        Padre: Nome Padre<br>
+        Fratello/Sorella: Nome Fratello
+      </div>
+    </div>
+
+    <!-- Breve storia -->
+    <div class="section">
+      <div class="section-title">Breve Storia</div>
+      <div class="section-content bordered">
+        Qui una breve presentazione: il personaggio è cresciuto in un villaggio tranquillo...
+      </div>
+    </div>
+  </article>
+</body>
+</html>
