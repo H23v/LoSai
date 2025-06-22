@@ -1,0 +1,201 @@
+{
+    "characters": {
+        "🐾 Kia Rosellina🌹": {
+            "bio": {
+                "carattere": "😊🌸🫣(😇/😤)",
+                "hobby": "(🐴💘💉) 🎀🌈 (😴)",
+                "lavoro": "(💐👩‍😕) ➡️ (✨💼💭🚀)"
+            },
+            "image": "imgs/kia_rosellina_avatar.png"
+        },
+        "🪴 Bellavin ​🤙": {
+            "bio": {
+                "carattere": "🧑‍🤝‍🧑❤️👂|🆘➡️😄",
+                "hobby": "🎶🍺(🎣)",
+                "lavoro": "(🎭🎙️🏘️)😂➡️🧠🎬🌟"
+            },
+            "image": "imgs/bellavin_avatar.png"
+        },
+        "🐇 Mia Manina✋": {
+            "bio": {
+                "carattere": "👧💖➡️⚡😠🔥(😡🧍‍♀️/🧍‍♀️🙂)",
+                "hobby": "💅✨💎 🛍️👗|🚬🍷",
+                "lavoro": "(🖇️🖥️🏢🌍) |💼➡️(💍💰)"
+            },
+            "image": "imgs/mia_manina_avatar.png"
+        },
+        "🐲​ Antō no Sukerō ​🥊​": {
+            "bio": {
+                "carattere": "😏🪞🎭|💔🙃😬",
+                "hobby": "🎉🍻🕺|(🪂🚁​🏎️​)💬",
+                "lavoro": "🎛️​🎧​🎶​➡️🔊🌍"
+            },
+            "image": "imgs/anto_no_sukero_avatar.png"
+        },
+        "🧖‍♀️Soni-ya 🥠": {
+            "bio": {
+                "carattere": "🗣️😊🙃🎈|❌(🍀😍👦)",
+                "hobby": "🏃‍♀️🌳🌞📷🌿",
+                "lavoro": "📸📹​➡️🏞️| ❌(💰)"
+            },
+            "image": "imgs/soni_ya_avatar.png"
+        },
+        "🌻​ Solegirò Giragirò 🦶​": {
+            "bio": {
+                "carattere": "(😔🫣)|❤️‍🩹🥀➡️​💗",
+                "hobby": "📚🧶​🌿🎨",
+                "lavoro": "(☕🥐​🫖​)👩‍🍳📍"
+            },
+            "image": "imgs/solegiro_giragiro_avatar.png"
+        },
+        "🐻 BrumBrum Orso Brun ​🏍️": {
+            "bio": {
+                "carattere": "(😤🤯)⚠️(🛡️💢)",
+                "hobby": "👨‍👦➡️🪚|🎸🎶|🕹️🌙🏠",
+                "lavoro": "👨‍🚒🔥✅(👶💭"
+            },
+            "image": "imgs/brumbrum_orso_brun_avatar.png"
+        },
+        "🐭 To’ Pozione 🥬​": {
+            "bio": {
+                "carattere": "(😶‍🌫️🙎‍♂️)🕳️(🙅‍♂️🤝)",
+                "hobby": "🧠📖|(🌿📜🔮🌍)",
+                "lavoro": "📚🏛️➡️🗝️"
+            },
+            "image": "imgs/to_pozione_avatar.png"
+        },
+        "👩‍🦰​ Mammmmmmmalga 🌱​": {
+            "bio": {
+                "carattere": "👩‍👧‍👦💞🤱|🍯|🙌💭",
+                "hobby": "🪡🌸🪴|(🖋️📜)🌙📖👶",
+                "lavoro": "🏡🧵|(🧺)💸"
+            },
+            "image": "imgs/mammmmmmmalga_avatar.png"
+        },
+        "Bambino": {
+            "bio": {
+                "carattere": "",
+                "hobby": "",
+                "lavoro": ""
+            },
+            "image": "imgs/bambino_avatar.png"
+        },
+        "Corte Marziale": {
+            "bio": {
+                "carattere": "",
+                "hobby": "",
+                "lavoro": ""
+            },
+            "image": "imgs/corte_marziale_avatar.png"
+        }
+    },
+    "posts": [
+        {
+            "id": "ep1-kia",
+            "episode": 1,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Col pelo 💗 e gli occhi 🫧,📄)😕➡️ (✨💼💭🚀)<br> viveva tra sogni, biscotti e scarabocchi 🖍️.<br>Aveva una voce gentile e precisa,<br> una 🐱 che sapeva cos’è una cosa condivisa.<br> Con Mia giocava da sempre, 🎠 dopo 🎠,<br>ma un giorno disse: “Così non si fa,” e il",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🏠"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖🔐"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep1-mia",
+            "episode": 1,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Con le zampe a forma di ✋ e i pensieri a matassa,​<br>non capiva perché Kia avesse quella faccia.<br>Aveva solo detto qualcosa a Solegirò,<br>ma poi la stanza si fece silenzio e gelo ❄️.<br>Da allora guardò Kia con occhi diversi 🪞,<br>come si guarda un abbraccio che non torna più versi.",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🏠"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖🔐"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖🔐"
+                }
+            ]
+        },
+        {
+            "id": "ep1-anto-soniya",
+            "episode": 1,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​",
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Fratelli di caos e merenda 🍪,<br>ridevano sempre, anche se nessuno li intendava.<br>Aprivano le porte, lanciavano 🎈,<br>ma non capirono cosa successe quel dì.<br>“Succede,” dissero, “le 👫 a volte si sbucciano come 🍌,”<br>mentre Mia smetteva di ridere con la stessa campana.",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🔐"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🗝️🔗🧬"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🗝️🔗🧬"
+                }
+            ]
+        },
+        {
+            "id": "ep1-soniya-anto",
+            "episode": 1,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠",
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "Fratelli di caos e merenda 🍪,<br>ridevano sempre, anche se nessuno li intendava.<br>Aprivano le porte, lanciavano 🎈,<br>ma non capirono cosa successe quel dì.<br>“Succede,” dissero, “le 👫 a volte si sbucciano come 🍌,”<br>mentre Mia smetteva di ridere con la stessa campana.",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🔐"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🗝️🔗🧬"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🗝️🔗🧬"
+                }
+            ]
+        }
+        
+    ]
+}
