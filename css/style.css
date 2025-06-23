@@ -27,6 +27,7 @@ body {
   line-height: 1.4;
 }
 
+
 /* ---------- copertina (index.html) ------------------------- */
 .cover {
   display: grid;
@@ -62,6 +63,8 @@ body {
 }
 
 /* ---------- header + menu ---------------------------------- */
+
+
 header {
   display: flex;
   align-items: center;
@@ -71,9 +74,13 @@ header {
   top: 0;
   background: var(--cream);
   z-index: 3;
-  background-image: linear-gradient(#ff83c7 0%, #ffdef0 25%, #faa2fd 100%);
+  background-image: linear-gradient(#D6A8E8 0%, #BC67DA 25%, #D6A8E8 100%);
   box-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.25),
+    0 2px 0 #6b2884,
+    inset 0 1px 0 #e0bded;
+  border: 1px solid #6b2884;
+  box-shadow:
+    0 2px 2px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
@@ -82,6 +89,15 @@ header {
   cursor: pointer;
   user-select: none;
   margin-left: auto;
+  padding: 0.4rem;
+  background-image: linear-gradient(#de8bff 0%, #f7e1ff 25%, #D6A8E8 100%);
+  box-shadow:
+    0 2px 0 #6b2884,
+    inset 0 1px 0 #e0bded;
+  border: 1px solid #6b2884;
+  box-shadow:
+    0 2px 2px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .menu-icon:active {
@@ -141,7 +157,7 @@ html {
 /* ---------- feed container --------------------------------- */
 #feed {
   display: grid;
-  gap: 1rem;
+  gap: 1.3rem;
   padding: .6rem .4rem;
 }
 
@@ -171,12 +187,12 @@ html {
   display: inline-flex;
   align-items: center;
   gap: .3rem;
-  background-image: linear-gradient(#f9cfff 0%, #ca9bfd 20%, #f9cfff 100%);
-  border: 1px solid #3e5577;
+  background-image: linear-gradient(#ffdaf5 0%, rgb(254, 151, 232) 20%, #fdc5ee 100%);
+  border: 1px solid rgb(139, 67, 124);
   border-radius: 1px;
   box-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.25),
-    inset 2px 1px 0 rgba(255, 255, 255, 0.4);
+    0 2px 2px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
   width: 12rem;
   height: 1.6rem;
   padding: .15rem .3rem;
@@ -213,7 +229,7 @@ html {
   margin: 0;
   font-size: .6rem;
   line-height: 1.4;
-  background-image: linear-gradient(#fdfcf4 0%, #f8edff 25%, #dbdbdb 100%);
+  background-image: linear-gradient(#fdfcf4 0%, #f8edff 25%, #f1f1f1 100%);
   border: 1px solid #ffffff;
   border-radius: 5px;
   box-shadow:
@@ -242,6 +258,11 @@ html {
 
 .bottom-row .bio-box {
   background: #f8ddc8;
+  background-image: linear-gradient(#f8f4da 0%, #fcda9f2d 25%, #f8f4da 100%);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
   padding: .5rem .6rem;
   width: 100%;
   font-size: 0.5rem;
@@ -258,15 +279,19 @@ html {
 }
 
 .bottom-row .rel-tag {
+  /* background-image: linear-gradient(#ff9ee3 0%, #eaa5fb 90%); */
   display: block;
   background: var(--pink);
-  box-shadow: 1px 1px 0px #262626da;
-  padding: .1rem .3rem;
   font-weight: 700;
   font-size: 0.5rem;
   margin-bottom: 0;
-  background-image: linear-gradient(#ff9ee3 0%, #eaa5fb 90%);
   color: #ffffff;
+  background-image: linear-gradient(#ffdaf5 0%, rgb(254, 151, 232) 20%, #fdc5ee 100%);
+  border: 1px solid rgb(218, 109, 195);
+  border-radius: 1px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  padding: .1rem .3rem;
 }
 
 .bottom-row .rel-links {
@@ -279,7 +304,7 @@ html {
   align-items: center;
   gap: .2rem;
   background-image: linear-gradient(#ffd0f2 0%, #fff1fe 90%);
-  border: 1px solid #acacac;
+  border: 1px solid rgb(253, 146, 230);
   border-radius: 1px;
   box-shadow:
     0 2px 2px rgba(0, 0, 0, 0.25),
@@ -287,7 +312,7 @@ html {
   padding: .2rem .3rem;
   width: 100%;
   text-decoration: none;
-  color: #fd9de2;
+  color: #fc8edd;
   font-size: 0.5rem;
   transition: transform .1s;
 }
@@ -301,6 +326,133 @@ html {
   box-shadow:
     0 1px 0 rgba(0, 0, 0, 0.3) inset,
     0 0 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.special-btn {
+  width: 8rem;
+  display: block;
+  /* prende tutta la larghezza dichiarata */
+  margin: -0.75rem auto 0;
+  /*     /* prende tutta la larghezza dichiarata */
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .25rem .6rem;
+  font-size: .7rem;
+  cursor: pointer;
+  transition: transform .1s;
+
+  color: #292929;
+  background-image: linear-gradient(#def7ff 10%, #92CEFB 50%, #e4f3ff 90%);
+  border: 1px solid #ABABC2;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px rgba(52, 174, 231, 0.25),
+    inset 0 1px 0 rgba(52, 52, 52, 0.4);
+}
+
+.special-btn:hover {
+  transform: translateY(-2px);
+}
+
+.special-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 0 var(--blue);
+}
+
+/*--------GIF E INTERMEZZI-----------*/
+.image-row {
+  display: flex;
+  height: 5.9rem;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 1.3rem 0;
+  background-color: #edc4f8;
+  border-radius: 0.2rem;
+  border: 1px solid #eaa5fb;
+}
+
+/* cerchio episodio (uguale per tutte) */
+.ep-circle {
+  width: 24px;
+  height: auto;
+  margin: 0.1rem;
+  border-radius: 50%;
+  background: #e69afb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--ink);
+  z-index: 2;
+}
+
+/* immagini generiche */
+.images-container img {
+  width: 5rem;
+  height: auto;
+  object-fit: cover;
+  margin: 0.11rem;
+  z-index: 1;
+}
+
+/* —————————————— override per episodio 2 —————————————— */
+.image-row.episode-2 {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 1.3rem 0;
+  background-color: #edc4f8;
+  border-radius: 0.2rem;
+  border: 1px solid #eaa5fb;
+}
+
+.image-row.episode-2 .ep-circle {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  flex-shrink: 0;
+}
+
+.image-row.episode-2 .ep-circle {
+  width: 24px;
+  height: auto;
+  border-radius: 50%;
+  background: #e69afb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--ink);
+  z-index: 2;
+}
+
+.image-row.episode-2 .images-container img {
+  width: 10rem;
+  height: auto;
+  object-fit: cover;
+  margin: 0 0.1rem;
+  z-index: 1;
+}
+
+
+/*----SFONDO----*/
+
+body:not(.cover) {
+  background-image: url('../imgs/feed_bg.jpg');
+  background-repeat: repeat;
+  background-size: 20rem;
+  background-attachment: fixed;
+  background-color: var(--cream);
+  /* fallback se l’immagine non carica */
+}
+
+.collab-post .header-bar {
+  display: flex !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  overflow-x: auto;       /* se il contenuto è troppo lungo, scroll orizzontale */
+  justify-content: center; /* centriamo sempre icon+nomi */
+  padding: .15rem .3rem;   /* manteniamo il padding originale */
 }
 
 /* ---------- responsive ≥ 600px ----------------------------- */

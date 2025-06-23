@@ -72,11 +72,11 @@
             },
             "image": "imgs/mammmmmmmalga_avatar.png"
         },
-        "Bambino": {
+        "🐁🌻 Petalclark Gnam 🥠": {
             "bio": {
-                "carattere": "",
-                "hobby": "",
-                "lavoro": ""
+                "carattere": "💞​👨‍👩‍👦​|⌛➡️🔮​🧖‍♂️​",
+                "hobby": "🚀(🧸​🪀​​🎪🫂)​",
+                "lavoro": "👦"
             },
             "image": "imgs/bambino_avatar.png"
         },
@@ -150,30 +150,7 @@
                 "🐲​ Antō no Sukerō ​🥊​",
                 "🧖‍♀️Soni-ya 🥠"
             ],
-            "story": "Fratelli di caos e merenda 🍪,<br>ridevano sempre, anche se nessuno li intendava.<br>Aprivano le porte, lanciavano 🎈,<br>ma non capirono cosa successe quel dì.<br>“Succede,” dissero, “le 👫 a volte si sbucciano come 🍌,”<br>mentre Mia smetteva di ridere con la stessa campana.",
-            "relations": [
-                {
-                    "char": "🪴 Bellavin ​🤙",
-                    "icon": "🫂🔐"
-                },
-                {
-                    "char": "🧖‍♀️Soni-ya 🥠",
-                    "icon": "🗝️🔗🧬"
-                },
-                {
-                    "char": "🐲​ Antō no Sukerō ​🥊​",
-                    "icon": "🗝️🔗🧬"
-                }
-            ]
-        },
-        {
-            "id": "ep1-soniya-anto",
-            "episode": 1,
-            "authors": [
-                "🧖‍♀️Soni-ya 🥠",
-                "🐲​ Antō no Sukerō ​🥊​"
-            ],
-            "image": "",
+            "image": "imgs/anto_soniya_avatar.png",
             "story": "Fratelli di caos e merenda 🍪,<br>ridevano sempre, anche se nessuno li intendava.<br>Aprivano le porte, lanciavano 🎈,<br>ma non capirono cosa successe quel dì.<br>“Succede,” dissero, “le 👫 a volte si sbucciano come 🍌,”<br>mentre Mia smetteva di ridere con la stessa campana.",
             "relations": [
                 {
@@ -1210,6 +1187,77 @@
                 {
                     "char": "🪴 Bellavin ​🤙",
                     "icon": "🤕🚀🔥"
+                }
+            ]
+        },
+        {
+            "id": "ep15-solegiro",
+            "episode": 15,
+            "authors": [
+                "🌻​ Solegirò Giragirò 🦶​"
+            ],
+            "image": "",
+            "story": "Si chiude piano, petalo a petalo,<br>la 🌞 si spegne con passo teatrale.<br>Silenzio di culla, silenzio di bara,<br>ma un seme si muove, la terra ripara. 🌱<br>Il vento sospira, la linfa si frange,<br>una madre scompare, una vita si cambia. 🕊️",
+            "relations": [
+                {
+                    "char": "🐭 To’ Pozione 🥬",
+                    "icon": "☠️⚰️"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂🙏"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "💖🙏"
+                },
+                {
+                    "char": "🐁🌻 Petalclark Gnam 🥠",
+                    "icon": "👩‍👦💝"
+                }
+            ]
+        },
+        {
+            "id": "ep15-mia-kia-anto",
+            "episode": 15,
+            "authors": [
+                "🐇 Mia Manina✋",
+                "🐾 Kia Rosellina🌹",
+                "🐲 Antō no Sukerō 🥊"
+            ],
+            "image": "imgs/ep15_collab.png",
+            "story": "Un 🌀 nel cielo, un canto di spine,<br>mani intrecciate con tremori sottili.<br>🪄 Sussurrano nomi, parole da libro,<br>ma nulla risponde, solo un fruscio fiacco.<br>Gli occhi si bagnano, la notte non parla,<br>“Sarà finita? O dorme… e ci guarda?” 🌘👁️",
+            "relations": [
+                {
+                    "char": "Solegirò Giragirò",
+                    "icon": "💭⚰️"
+                },
+                {
+                    "char": "Kia Rosellina🌹",
+                    "icon": "🙏🥹"
+                },
+                {
+                    "char": "Antō no Sukerō 🥊",
+                    "icon": "🌅💔"
+                }
+            ]
+        },
+        {
+            "id": "ep15-petalclark",
+            "episode": 15,
+            "authors": [
+                "🐁🌻 Petalclark Gnam 🥠"
+            ],
+            "image": "",
+            "story": "Corre tra erbe, inciampa nei sogni,<br>vede una 🔮, ricorda quei giorni.<br>Un biscotto, un fratello, un nome nel fumo,<br>le vite confuse si mescolano a turno.<br>“Mi chiamano fiore, ma dentro io sono…”<br>una voce lontana che dice: “🥠 bentornato.”",
+            "relations": [
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "👩‍👧💝"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "💭🌟"
                 }
             ]
         }
