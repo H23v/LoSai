@@ -33,14 +33,27 @@ body {
   display: grid;
   place-items: center;
   text-align: center;
-  height: 100vh;
+  height: 91vh;
   gap: .5rem;
+
+  /* immagine di sfondo */
+  background: url('../imgs/cover_bg.png') no-repeat center center;
+  background-size: cover;
 }
 
-.cover h1 {
-  font-size: clamp(1.8rem, 5vw, 2.4rem);
+/* logo in mezzo */
+.cover-logo {
+  width: clamp(8rem, 40vw, 12rem);
+  height: auto;
 }
 
+/* se vuoi regolare il sottotitolo */
+.cover-subtitle {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+/* bottone “enter” rimane identico */
 .enter-btn {
   padding: .8rem .3rem;
   width: 10rem;
@@ -56,7 +69,6 @@ body {
     0 2px 0 rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
-
 .enter-btn:hover {
   background: var(--ink);
   color: var(--cream);
@@ -139,7 +151,7 @@ header {
 /* ---------- scrollbar custom ------------------------------- */
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--blue) var(--pink);
+  scrollbar-color:#fec6f029;
 }
 
 ::-webkit-scrollbar {
@@ -147,11 +159,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--pink);
+  background: #fec6f029;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue);
+  background: #fec6f029;
 }
 
 /* ---------- feed container --------------------------------- */

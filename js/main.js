@@ -24,17 +24,18 @@ const EP_ICON = {
 
 /* -------------- image‐rows definitions ----------------------- */
 const IMAGE_ROWS = [
-  { episode: 1, images: ["imgs/row1_img1.png","imgs/row1_img2.png","imgs/row1_img3.png", "imgs/row1_img4.png"] },
-  { episode: 2, images: ["imgs/row2_img1.gif","imgs/row2_img2.gif","imgs/row2_img3.gif","imgs/row2_img4.gif"] },
-  { episode: 3, images: ["imgs/row3_img1.gif","imgs/row3_img2.png","imgs/row3_img3.png","imgs/row3_img4.png"] },
-  { episode: 4, images: ["imgs/row4_img1.png","imgs/row4_img2.gif","imgs/row4_img3.png","imgs/row4_img4.png"] },
-  { episode: 5, images: ["imgs/row5_img1.png","imgs/row5_img2.gif","imgs/row5_img3.png","irow5_img4.gif"] },
-  { episode: 6, images: ["imgs/row5_img1.png","imgs/row5_img2.gif","imgs/row5_img3.png","irow5_img4.gif"] }
+  { episode: 1, images: ["imgs/row1_img1.png", "imgs/row1_img2.gif", "imgs/row1_img3.png", "imgs/row1_img4.png"] },
+  { episode: 2, images: ["imgs/row2_img1.gif", "imgs/row2_img2.gif", "imgs/row2_img3.gif", "imgs/row2_img4.gif"] },
+  { episode: 3, images: ["imgs/row3_img1.gif", "imgs/row3_img2.png", "imgs/row3_img3.png", "imgs/row3_img4.png"] },
+  { episode: 4, images: ["imgs/row4_img1.png", "imgs/row4_img2.png", "imgs/row4_img3.png", "imgs/row4_img4.png"] },
+  { episode: 5, images: ["imgs/row5_img1.png", "imgs/row5_img2.png", "imgs/row5_img3.png", "imgs/row5_img4.gif"] },
+  { episode: 6, images: ["imgs/row6_img1.png", "imgs/row6_img2.png", "imgs/row6_img3.gif", "imgs/row6_img4.png"] },
+  { episode: 6, images: ["imgs/row7_img1.png", "imgs/row7_img2.png", "imgs/row7_img3.gif", "imgs/row7_img4.png"] }
 ];
 
 /* -------------- DOM elems ----------------------------------- */
-const FEED   = document.getElementById('feed');
-const MENU   = document.getElementById('charMenu');
+const FEED = document.getElementById('feed');
+const MENU = document.getElementById('charMenu');
 const TOGGLE = document.getElementById('toggleMenu');
 
 /* -------------- fetch + render ------------------------------ */
@@ -42,34 +43,34 @@ fetch('data/characters_posts.json')
   .then(r => r.json())
   .then(raw => {
     const characters = {};
-    Object.entries(raw.characters).forEach(([k,v]) => {
+    Object.entries(raw.characters).forEach(([k, v]) => {
       characters[clean(k)] = v;
     });
 
     const posts = raw.posts.map(p => ({
       ...p,
       authors: p.authors.map(clean),
-      relations: (p.relations||[]).map(r => ({
+      relations: (p.relations || []).map(r => ({
         char: clean(r.char),
         icon: r.icon
       }))
     }));
 
-    init({characters, posts});
+    init({ characters, posts });
   })
   .catch(err => {
     console.error(err);
     FEED.textContent = 'Errore nel caricamento dati 😢';
   });
 
-function init({characters, posts}) {
+function init({ characters, posts }) {
   shuffle(posts);
   buildMenu(Object.keys(characters));
   const positions = selectNonAdjacentPositions(posts.length, IMAGE_ROWS.length);
   let rowIdx = 0;
-  posts.forEach((p,i) => {
+  posts.forEach((p, i) => {
     FEED.appendChild(postNode(p, characters, i));
-    if (positions.includes(i+1) && rowIdx < IMAGE_ROWS.length) {
+    if (positions.includes(i + 1) && rowIdx < IMAGE_ROWS.length) {
       FEED.appendChild(imageRowNode(IMAGE_ROWS[rowIdx]));
       rowIdx++;
     }
@@ -87,7 +88,7 @@ function init({characters, posts}) {
       e.preventDefault();
       filterByChar(link.dataset.char);
       document.getElementById(`char-${link.dataset.char}-0`)
-              ?.scrollIntoView({behavior:'smooth'});
+        ?.scrollIntoView({ behavior: 'smooth' });
       return;
     }
     if (e.target.matches('button.special-btn')) {
@@ -101,33 +102,33 @@ function init({characters, posts}) {
 function buildMenu(chars) {
   MENU.innerHTML = `<button data-char="all">Tutti i personaggi</button>`
     + chars.map(c => {
-        const id = slug(c);
-        return `<button data-char="${id}">${c}</button>`;
-      }).join('');
+      const id = slug(c);
+      return `<button data-char="${id}">${c}</button>`;
+    }).join('');
 }
 
 function filterByChar(id) {
   document.querySelectorAll('.post, .image-row').forEach(el => {
     if (el.classList.contains('post')) {
-      const authors = JSON.parse(el.dataset.chars||'[]')
+      const authors = JSON.parse(el.dataset.chars || '[]')
         .map(a => slug(a));
       el.style.display = (id === 'all' || authors.includes(id))
-                       ? 'grid' : 'none';
+        ? 'grid' : 'none';
     } else {
       el.style.display = (id === 'all') ? 'flex' : 'none';
     }
   });
 }
 
-function selectNonAdjacentPositions(n,m) {
-  const slots = Array.from({length:n-1},(_,i)=>i+1);
+function selectNonAdjacentPositions(n, m) {
+  const slots = Array.from({ length: n - 1 }, (_, i) => i + 1);
   shuffle(slots);
   const sel = [];
   for (let s of slots) {
-    if (sel.length>=m) break;
-    if (!sel.some(x=>Math.abs(x-s)<=1)) sel.push(s);
+    if (sel.length >= m) break;
+    if (!sel.some(x => Math.abs(x - s) <= 1)) sel.push(s);
   }
-  return sel.sort((a,b)=>a-b);
+  return sel.sort((a, b) => a - b);
 }
 
 function imageRowNode(row) {
@@ -151,10 +152,10 @@ function imageRowNode(row) {
 
 function postNode(p, characters, idx) {
   const authors = p.authors.map(clean);
-  const icon    = EP_ICON[p.episode] || "●";
-  const relHTML = (p.relations||[]).map(r => {
+  const icon = EP_ICON[p.episode] || "●";
+  const relHTML = (p.relations || []).map(r => {
     const ico = r.icon ? `${r.icon} ` : "";
-    const id  = slug(r.char);
+    const id = slug(r.char);
     return `<a href="#char-${id}-0"
                class="rel-link"
                data-char="${id}">${ico}${r.char}</a>`;
@@ -162,30 +163,30 @@ function postNode(p, characters, idx) {
 
   const isCorte = p.id === "ep12-corte";
   const specialBtn = isCorte
-    ? `<button class="special-btn">⚡ Azione</button>`
+    ? `<button class="special-btn">Uccidi</button>`
     : "";
 
   const tpl = document.createElement("article");
-  tpl.className      = "post";
-  tpl.dataset.chars  = JSON.stringify(authors);
-  tpl.id             = `ep-${p.id}`;
+  tpl.className = "post";
+  tpl.dataset.chars = JSON.stringify(authors);
+  tpl.id = `ep-${p.id}`;
   if (authors.length > 1) tpl.classList.add('collab-post');
-  if (isCorte)           tpl.classList.add('special-post');
+  if (isCorte) tpl.classList.add('special-post');
 
   tpl.innerHTML = `
     <div class="header-bar">${icon} ${authors.join(" × ")}</div>
     <div class="content-row">
       <img class="avatar"
-           src="${p.image||characters[authors[0]].image||''}"
+           src="${p.image || characters[authors[0]].image || ''}"
            alt="">
       <p class="story">${p.story}</p>
     </div>
     ${isCorte ? "" :   /* se è Corte, salto tutta la bottom-row */
       `<div class="bottom-row">
          <div class="bio-box">
-           <b>Carattere</b> ${characters[authors[0]].bio.carattere||''}
-           <b>Hobby</b>     ${characters[authors[0]].bio.hobby||''}
-           <b>Lavoro</b>    ${characters[authors[0]].bio.lavoro||''}
+           <b>Carattere</b> ${characters[authors[0]].bio.carattere || ''}
+           <b>Hobby</b>     ${characters[authors[0]].bio.hobby || ''}
+           <b>Lavoro</b>    ${characters[authors[0]].bio.lavoro || ''}
          </div>
          <div class="relations">
            <span class="rel-tag">Relazioni</span>
