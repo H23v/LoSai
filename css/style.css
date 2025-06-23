@@ -33,12 +33,13 @@ body {
   display: grid;
   place-items: center;
   text-align: center;
-  height: 91vh;
+  height: 93vh;
   gap: .5rem;
 
   /* immagine di sfondo */
-  background: url('../imgs/cover_bg.png') no-repeat center center;
+  background: url('../imgs/cover_bg.png') repeat center center;
   background-size: cover;
+  background-color: #554732;
 }
 
 /* logo in mezzo */
@@ -59,19 +60,21 @@ body {
   width: 10rem;
   height: 3rem;
   border: 1px solid var(--ink);
+  color: #6c0051;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
   transition: background .2s;
-  background-image: linear-gradient(#ff83c7 0%, #ffdef0 25%, #faa2fd 100%);
+  background-image: linear-gradient(#ffdef0 0%, #ff83c7 25%, #faa2fd 100%);
   box-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.25),
+    0 2px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
+
 .enter-btn:hover {
-  background: var(--ink);
-  color: var(--cream);
+  background-image: linear-gradient(#ff83c7 0%, #ffdef0 25%, #faa2fd 100%);
+  color: #ff04c0;
 }
 
 /* ---------- header + menu ---------------------------------- */
@@ -151,7 +154,7 @@ header {
 /* ---------- scrollbar custom ------------------------------- */
 html {
   scrollbar-width: thin;
-  scrollbar-color:#fec6f029;
+  scrollbar-color: #fec6f029;
 }
 
 ::-webkit-scrollbar {
@@ -205,7 +208,7 @@ html {
   box-shadow:
     0 2px 2px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  width: 12rem;
+  width: 13rem;
   height: 1.6rem;
   padding: .15rem .3rem;
   font-weight: 700;
@@ -362,7 +365,11 @@ html {
 }
 
 .special-btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-0.5px);
+    background-image: linear-gradient(#89ccff 10%, #bbedfd 50%, #cae7ff 100%);
+    box-shadow: 1px 3px 4px rgba(52, 174, 231, 0.25),
+    inset 1px 1px 3px rgba(52, 52, 52, 0.4);
+     border: 1px solid #8d8db3;
 }
 
 .special-btn:active {
@@ -373,77 +380,95 @@ html {
 /*--------GIF E INTERMEZZI-----------*/
 .image-row {
   display: flex;
-  height: 5.9rem;
+  justify-content: center;
+  /* centra il gruppo di immagini */
+  height: 6.3rem;
   align-items: center;
-  gap: 0.3rem;
   margin: 1.3rem 0;
   background-color: #edc4f8;
   border-radius: 0.2rem;
   border: 1px solid #eaa5fb;
+  box-shadow: 1px 2px 3px rgba(255, 255, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 /* cerchio episodio (uguale per tutte) */
 .ep-circle {
+  display: none;
   width: 24px;
-  height: auto;
+
+  /*height: auto;
   margin: 0.1rem;
   border-radius: 50%;
   background: #e69afb;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
   color: var(--ink);
-  z-index: 2;
+  z-index: 2;*/
 }
 
 /* immagini generiche */
 .images-container img {
-  width: 5rem;
+  width: 5.4rem;
   height: auto;
   object-fit: cover;
-  margin: 0.11rem;
+  margin: 0.15rem;
   z-index: 1;
+  border-radius: 0.1rem;
+  border: 1.2px solid #eaa5fb;
+  box-shadow: 1px 2px 3px rgba(255, 255, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 /* —————————————— override per episodio 2 —————————————— */
-.image-row.episode-2 {
+.image-row.episode-2,
+.image-row.episode-7,
+.image-row.episode-8,
+.image-row.episode-9,
+.image-row.episode-10,
+.image-row.episode-11 {
   display: flex;
-  height: 4rem;
+  justify-content: center;
+  height: 5rem;
   align-items: center;
-  gap: 0.3rem;
   margin: 1.3rem 0;
   background-color: #edc4f8;
   border-radius: 0.2rem;
   border: 1px solid #eaa5fb;
 }
 
-.image-row.episode-2 .ep-circle {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  flex-shrink: 0;
-}
 
-.image-row.episode-2 .ep-circle {
-  width: 24px;
+.image-row.episode-2 .ep-circle,
+.image-row.episode-7 .ep-circle,
+.image-row.episode-8 .ep-circle,
+.image-row.episode-9 .ep-circle,
+.image-row.episode-10 .ep-circle,
+.image-row.episode-11 .ep-circle {
+  display: none;
+
+  /*width: 24px;
   height: auto;
   border-radius: 50%;
   background: #e69afb;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
   color: var(--ink);
-  z-index: 2;
+  z-index: 2;*/
 }
 
-.image-row.episode-2 .images-container img {
-  width: 10rem;
+.image-row.episode-2 .images-container img,
+.image-row.episode-7 .images-container img,
+.image-row.episode-8 .images-container img,
+.image-row.episode-9 .images-container img,
+.image-row.episode-10 .images-container img,
+.image-row.episode-11 .images-container img {
+  width: 11.5rem;
   height: auto;
   object-fit: cover;
-  margin: 0 0.1rem;
   z-index: 1;
+  margin: 0;
 }
 
 
@@ -462,12 +487,141 @@ body:not(.cover) {
   display: flex !important;
   width: 100% !important;
   white-space: nowrap !important;
-  overflow-x: auto;       /* se il contenuto è troppo lungo, scroll orizzontale */
-  justify-content: center; /* centriamo sempre icon+nomi */
-  padding: .15rem .3rem;   /* manteniamo il padding originale */
+  overflow-x: auto;
+  /* se il contenuto è troppo lungo, scroll orizzontale */
+  justify-content: center;
+  /* centriamo sempre icon+nomi */
+  padding: .15rem .3rem;
+  /* manteniamo il padding originale */
 }
 
+/*-----POPUP C.MARZIALE---------*/
+#popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#popupOverlay.hidden {
+  display: none;
+}
+
+#popupBox {
+  padding: 1rem 1.5rem;
+  max-width: 80%;
+  background-image: linear-gradient(#ffffff 0%, #f8edff 25%, #e4e4e4 100%);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+#popupBox p {
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  padding: .25rem .6rem;
+  font-size: .7rem;
+  color: #222;
+}
+
+#popupClose {
+  padding: .5rem 1rem;
+  color: #292929;
+  background-image: linear-gradient(#def7ff 10%, #92CEFB 50%, #e4f3ff 90%);
+  border: 1px solid #ABABC2;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px rgba(52, 174, 231, 0.25),
+    inset 0 1px 0 rgba(52, 52, 52, 0.4);
+  cursor: pointer;
+}
+
+#popupClose:hover {
+    transform: translateY(-0.5px);
+  background-image: linear-gradient(#89ccff 10%, #bbedfd 50%, #cae7ff 100%);
+    box-shadow: 1px 3px 4px rgba(52, 174, 231, 0.25),
+    inset 1px 1px 3px rgba(52, 52, 52, 0.4);
+     border: 1px solid #8d8db3;
+}
+
+
 /* ---------- responsive ≥ 600px ----------------------------- */
-@media(min-width:600px) {
-  /* qui puoi ridefinire layout desktop se vuoi */
+@media (min-width: 600px) {
+
+  /* Centra i post ed espande il container feed */
+  #feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  /* Dimensioni più generose e centratura orizzontale */
+  .post {
+    width: 36rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  /* Header più grande */
+  .post .header-bar {
+    font-size: 0.7rem;
+    padding: 0.6rem 1rem;
+    width: 20rem;
+    height: 2rem;
+  }
+
+  /* Contenuto — più spazio tra avatar e storia */
+  .post .content-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+  }
+
+  /* Avatar più grande */
+  .post .avatar {
+    width: 100px;
+    height: auto;
+  }
+
+  /* Storia più leggibile */
+  .post .story {
+    font-size: 0.6rem;
+    padding: 0.8rem 1rem;
+    line-height: 1.6;
+  }
+
+  /* Bio box più ampio e testo più grande */
+  .post .bio-box {
+    font-size: 0.6rem;
+    padding: 0.8rem 1rem;
+  }
+
+  /* Relazioni: maggior spazio interno e testo più grande */
+  .post .relations .rel-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+  }
+
+  .post .rel-link {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Pulsante speciale più grande */
+  .post .special-btn {
+    font-size: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+  }
+
 }
