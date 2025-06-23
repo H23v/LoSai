@@ -1,5 +1,5 @@
 /* ============================================================
-   Brain-Rot Blog · Style
+   Brain-Rot Blog · Style (Ultra Compatto per Mobile) — layout 2x2
    ============================================================ */
 
 /* ---------- variabili di colore ---------------------------- */
@@ -15,7 +15,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 /* ---------- font & base ------------------------------------ */
@@ -23,9 +23,8 @@ body {
   font-family: "Fira Sans", sans-serif;
   background: var(--cream);
   color: var(--ink);
-  font-size: 15px;
-  /* leggermente più piccolo per mobile */
-  line-height: 1.45;
+  font-size: 9px;
+  line-height: 1.4;
 }
 
 /* ---------- copertina (index.html) ------------------------- */
@@ -34,33 +33,40 @@ body {
   place-items: center;
   text-align: center;
   height: 100vh;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .cover h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem)
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
 }
 
 .enter-btn {
-  padding: .75rem 1.5rem;
-  border: 2px solid var(--ink);
+  padding: .8rem .3rem;
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid var(--ink);
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
   transition: background .2s;
+  background-image: linear-gradient(#ff83c7 0%, #ffdef0 25%, #faa2fd 100%);
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .enter-btn:hover {
   background: var(--ink);
-  color: var(--cream)
+  color: var(--cream);
 }
 
 /* ---------- header + menu ---------------------------------- */
 header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  box-shadow: 6px 3px 4px #26262637;
+  gap: 0.3rem;
+  padding: 0.4rem;
   position: sticky;
   top: 0;
   background: var(--cream);
@@ -68,259 +74,236 @@ header {
   background-image: linear-gradient(#ff83c7 0%, #ffdef0 25%, #faa2fd 100%);
   box-shadow:
     0 2px 0 rgba(0, 0, 0, 0.25),
-    /* drop-shadow netta */
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .menu-icon {
-  width: 48px;
+  width: 60px;
   cursor: pointer;
   user-select: none;
   margin-left: auto;
 }
 
 .menu-icon:active {
-  transform: scale(.95)
+  transform: scale(.95);
 }
 
 #charMenu {
   position: absolute;
-  right: 1rem;
-  top: 3.5rem;
-  background: var(--cream);
+  right: 0.3rem;
+  top: 2.5rem;
+  background: #ca9bfd;
   border: 1px solid var(--blue);
-  padding: .5rem;
-  max-height: 60vh;
+  padding: .2rem;
+  width: 10rem;
+  max-height: 80vh;
   overflow-y: auto;
   display: grid;
-  gap: .25rem;
+  gap: .1rem;
 }
 
 #charMenu.hidden {
-  display: none
+  display: none;
 }
 
 #charMenu button {
-  background: none;
-  border: none;
+  background: #ffffff;
+  border: 1px solid #ffe100;
   cursor: pointer;
-  padding: .25rem .6rem;
+  padding: .15rem .3rem;
   text-align: left;
-  font-size: 14px
+  font-size: 10px;
 }
 
 #charMenu button:hover {
   background: var(--pink);
-  color: var(--ink)
+  color: var(--ink);
 }
 
 /* ---------- scrollbar custom ------------------------------- */
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--blue) var(--pink)
+  scrollbar-color: var(--blue) var(--pink);
 }
 
 ::-webkit-scrollbar {
-  width: 10px
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--pink)
+  background: var(--pink);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue)
+  background: var(--blue);
 }
 
 /* ---------- feed container --------------------------------- */
 #feed {
   display: grid;
-  gap: 2rem;
-  padding: 1.5rem 1rem
+  gap: 1rem;
+  padding: .6rem .4rem;
 }
 
 /* ============================================================
-   CARD POST
+   Layout card: 3 righe indipendenti
    ============================================================ */
 .post {
-  background: #ffffff;
-  box-shadow: 1px 1px 3px #262626da;
-  /* ombra netta, niente bordo */
-  padding: .75rem;
   display: grid;
-  gap: 0rem;
-  box-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  background-image:
-    linear-gradient(#fff7ce 0%, #eafab4 25%, #fdf09c 100%);
+  grid-template-rows:
+    auto
+    /* header-bar */
+    auto
+    /* content-row */
+    auto;
+  /* bottom-row */
+  gap: 0.4rem;
+  background: #ffffff;
+  box-shadow: 1px 1px 2px #262626da;
+  padding: .4rem;
+  background-image: linear-gradient(#ffe7ce 0%, #fad9b4 25%, #fdbc9c 100%);
   border: 1px solid #3e5577;
-  border-radius: 5px;
-  border: 1px solid #3e5577;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
-/* header: icona episodio + autore --------------------------- */
+/* ----- NOME + SIMBOLO ------ */
 .header-bar {
   display: inline-flex;
   align-items: center;
-  gap: .4rem;
-  background: var(--pink);
-  background-image:
-    linear-gradient(#0a76a8 0%, #bde8fc 100%);
+  gap: .3rem;
+  background-image: linear-gradient(#f9cfff 0%, #ca9bfd 20%, #f9cfff 100%);
   border: 1px solid #3e5577;
-  border-radius: 2px;
+  border-radius: 1px;
   box-shadow:
     0 2px 0 rgba(0, 0, 0, 0.25),
     inset 2px 1px 0 rgba(255, 255, 255, 0.4);
-  width: 90%;
-  height: 3rem;
-  padding: .25rem .6rem;
-  font-weight: 900;
-  font-size: 1rem;
-  z-index: 1;
+  width: 12rem;
+  height: 1.6rem;
+  padding: .15rem .3rem;
+  font-weight: 700;
+  font-size: 0.65rem;
   color: #210142;
 }
 
-/* riga con immagine e bio ----------------------------------- */
-.content-row {
-  display: flex;
-  align-items: flex-start
-}
-
 .avatar {
-  width: 170px;
-  height: 130px;
-  flex-shrink: 0;
+  border: 0.05rem solid #3e5577;
+  box-shadow:
+    2px 2px 3px rgba(0, 0, 0, 0.25),
+    inset 2px 1px 0 rgba(255, 255, 255, 0.4);
+  border-radius: 0.4rem;
+}
+
+/* riga 1: avatar + storia (2 colonne) */
+.content-row {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  /* avatar 60px, storia flessibile */
+  gap: 0.3rem;
+  align-items: start;
+}
+
+.content-row .avatar {
+  width: 100%;
+  /* rispetta i 60px della colonna */
+}
+
+.content-row .story {
   position: relative;
-  z-index: 2
+  padding: .6rem .8rem;
+  margin: 0;
+  font-size: .6rem;
+  line-height: 1.4;
+  background-image: linear-gradient(#fdfcf4 0%, #f8edff 25%, #dbdbdb 100%);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
-.bio-box {
-  position: relative;
-  z-index: 2;
-  background: #f8f8c8;
-  flex: 1;
-  padding: .4rem .6rem;
-  box-shadow: 3px 3px 0px #ffa034c8;
-  border-radius: 2px;
-  border: 3px solid #f9d02a;
-  background-image:
-    linear-gradient(#f9d02a 0%, #ffa034c8 100%);
-  font-size: 0.7rem;
-  color: #814700;
-
+.content-row .story::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #f3f3f3;
 }
 
-.bio-box b {
-  display: block;
-  margin-top: .25rem
-}
-
-/* relazioni sotto l'immagine + storia ----------------------- */
+/* riga 2: bio + relazioni (layout originale) */
 .bottom-row {
   display: flex;
-  flex-direction: column;
-  text-shadow: 0px 1px 1px #26262667;
-  gap: 1rem;
-  color: #ff7700;
+  gap: 0.4rem;
+  align-items: flex-start;
 }
 
-.relations {
-  width: 100%
+.bottom-row .bio-box {
+  background: #f8ddc8;
+  padding: .5rem .6rem;
+  width: 100%;
+  font-size: 0.5rem;
+  color: #814700;
 }
 
-.rel-tag {
+.bottom-row .bio-box b {
+  display: block;
+  margin-top: .1rem;
+}
+
+.bottom-row .relations {
+  width: 100%;
+}
+
+.bottom-row .rel-tag {
   display: block;
   background: var(--pink);
   box-shadow: 1px 1px 0px #262626da;
-  padding: .25rem .6rem;
+  padding: .1rem .3rem;
   font-weight: 700;
-  margin-bottom: 0rem;
+  font-size: 0.5rem;
+  margin-bottom: 0;
   background-image: linear-gradient(#ff9ee3 0%, #eaa5fb 90%);
   color: #ffffff;
-
 }
 
-/* bottoni relazioni rettangolari ---------------------------- */
-.rel-links {
+.bottom-row .rel-links {
   display: grid;
-  box-shadow: 0px 1px 5px #ff21f84f;
+  gap: 0rem;
 }
 
-.rel-link {
+.bottom-row .rel-link {
   display: flex;
   align-items: center;
-  gap: .4rem;
-  background: var(--yellow);
-  box-shadow: 0 3px 0 var(--blue);
-  padding: .4rem .6rem;
+  gap: .2rem;
+  background-image: linear-gradient(#ffd0f2 0%, #fff1fe 90%);
+  border: 1px solid #acacac;
+  border-radius: 1px;
+  box-shadow:
+    0 2px 2px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  padding: .2rem .3rem;
   width: 100%;
   text-decoration: none;
-  color: var(--ink);
-  font-size: .85rem;
+  color: #fd9de2;
+  font-size: 0.5rem;
   transition: transform .1s;
 }
 
-.rel-link:hover {
-  transform: translateY(-2px)
+.bottom-row .rel-link:hover {
+  transform: translateY(-2px);
 }
 
-.story {
-  line-height: 1.4
+.bottom-row .rel-link:active {
+  transform: translateY(0);
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.3) inset,
+    0 0 3px rgba(0, 0, 0, 0.2) inset;
 }
 
 /* ---------- responsive ≥ 600px ----------------------------- */
 @media(min-width:600px) {
-  .bottom-row {
-    flex-direction: row
-  }
-
-  .relations {
-    width: 160px;
-    flex-shrink: 0
-  }
-}
-
-/* ============================================================
-   BOTTONI Relazioni – stile iPhone toolbar
-   ============================================================ */
-.rel-link {
-  /* gradiente di sfondo (dall’azzurro pallido al blu più scuro) */
-  background-image:
-    linear-gradient(#ffd0f2 0%, #fff1fe 90%);
-
-  /* bordo e raggi di curvatura simili a quelli JavaFX */
-  border: 1px solid #acacac;
-  border-radius: 1px;
-
-  /* ombra di profondità verso il basso (look glossy) */
-  box-shadow:
-    0 2px 2px rgba(0, 0, 0, 0.25),
-    /* drop-shadow netta */
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  /* lieve highlight interno */
-
-  /* dimensioni & testo */
-  display: flex;
-  align-items: center;
-  gap: .4rem;
-  width: 100%;
-  padding: .5rem .8rem;
-  color: #fd9de2;
-  font-size: .85rem;
-  text-decoration: none;
-  transition: transform .1s;
-}
-
-.rel-link:hover {
-  transform: translateY(-2px)
-}
-
-.rel-link:active {
-  transform: translateY(0);
-  /* “premuto” */
-  box-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.3) inset,
-    0 0 3px rgba(0, 0, 0, 0.2) inset;
+  /* qui puoi ridefinire layout desktop se vuoi */
 }

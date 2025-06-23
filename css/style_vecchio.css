@@ -1,0 +1,326 @@
+/* ============================================================
+   Brain-Rot Blog · Style
+   ============================================================ */
+
+/* ---------- variabili di colore ---------------------------- */
+:root {
+  --cream: #fdf8f4;
+  --pink: #ffc4d3;
+  --yellow: #fef580;
+  --blue: #5cabff;
+  --ink: #262626;
+}
+
+/* ---------- reset minimale --------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+/* ---------- font & base ------------------------------------ */
+body {
+  font-family: "Fira Sans", sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 15px;
+  /* leggermente più piccolo per mobile */
+  line-height: 1.45;
+}
+
+/* ---------- copertina (index.html) ------------------------- */
+.cover {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.cover h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem)
+}
+
+.enter-btn {
+  padding: .75rem 1.5rem;
+  border: 2px solid var(--ink);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background .2s;
+}
+
+.enter-btn:hover {
+  background: var(--ink);
+  color: var(--cream)
+}
+
+/* ---------- header + menu ---------------------------------- */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 6px 3px 4px #26262637;
+  position: sticky;
+  top: 0;
+  background: var(--cream);
+  z-index: 3;
+  background-image: linear-gradient(#ff83c7 0%, #ffdef0 25%, #faa2fd 100%);
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.25),
+    /* drop-shadow netta */
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.menu-icon {
+  width: 48px;
+  cursor: pointer;
+  user-select: none;
+  margin-left: auto;
+}
+
+.menu-icon:active {
+  transform: scale(.95)
+}
+
+#charMenu {
+  position: absolute;
+  right: 1rem;
+  top: 3.5rem;
+  background: var(--cream);
+  border: 1px solid var(--blue);
+  padding: .5rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  display: grid;
+  gap: .25rem;
+}
+
+#charMenu.hidden {
+  display: none
+}
+
+#charMenu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: .25rem .6rem;
+  text-align: left;
+  font-size: 14px
+}
+
+#charMenu button:hover {
+  background: var(--pink);
+  color: var(--ink)
+}
+
+/* ---------- scrollbar custom ------------------------------- */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue) var(--pink)
+}
+
+::-webkit-scrollbar {
+  width: 10px
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pink)
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue)
+}
+
+/* ---------- feed container --------------------------------- */
+#feed {
+  display: grid;
+  gap: 2rem;
+  padding: 1.5rem 1rem
+}
+
+/* ============================================================
+   CARD POST
+   ============================================================ */
+.post {
+  background: #ffffff;
+  box-shadow: 1px 1px 3px #262626da;
+  /* ombra netta, niente bordo */
+  padding: .75rem;
+  display: grid;
+  gap: 0rem;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  background-image:
+    linear-gradient(#fff7ce 0%, #eafab4 25%, #fdf09c 100%);
+  border: 1px solid #3e5577;
+  border-radius: 5px;
+  border: 1px solid #3e5577;
+  border-radius: 5px;
+}
+
+/* header: icona episodio + autore --------------------------- */
+.header-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: var(--pink);
+  background-image:
+    linear-gradient(#0a76a8 0%, #bde8fc 100%);
+  border: 1px solid #3e5577;
+  border-radius: 2px;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.25),
+    inset 2px 1px 0 rgba(255, 255, 255, 0.4);
+  width: 90%;
+  height: 3rem;
+  padding: .25rem .6rem;
+  font-weight: 900;
+  font-size: 1rem;
+  z-index: 1;
+  color: #210142;
+}
+
+/* riga con immagine e bio ----------------------------------- */
+.content-row {
+  display: flex;
+  align-items: flex-start
+}
+
+.avatar {
+  width: 170px;
+  height: 130px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2
+}
+
+.bio-box {
+  position: relative;
+  z-index: 2;
+  background: #f8f8c8;
+  flex: 1;
+  padding: .4rem .6rem;
+  box-shadow: 3px 3px 0px #ffa034c8;
+  border-radius: 2px;
+  border: 3px solid #f9d02a;
+  background-image:
+    linear-gradient(#f9d02a 0%, #ffa034c8 100%);
+  font-size: 0.7rem;
+  color: #814700;
+
+}
+
+.bio-box b {
+  display: block;
+  margin-top: .25rem
+}
+
+/* relazioni sotto l'immagine + storia ----------------------- */
+.bottom-row {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0px 1px 1px #26262667;
+  gap: 1rem;
+  color: #ff7700;
+}
+
+.relations {
+  width: 100%
+}
+
+.rel-tag {
+  display: block;
+  background: var(--pink);
+  box-shadow: 1px 1px 0px #262626da;
+  padding: .25rem .6rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+  background-image: linear-gradient(#ff9ee3 0%, #eaa5fb 90%);
+  color: #ffffff;
+
+}
+
+/* bottoni relazioni rettangolari ---------------------------- */
+.rel-links {
+  display: grid;
+  box-shadow: 0px 1px 5px #ff21f84f;
+}
+
+.rel-link {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  background: var(--yellow);
+  box-shadow: 0 3px 0 var(--blue);
+  padding: .4rem .6rem;
+  width: 100%;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: .85rem;
+  transition: transform .1s;
+}
+
+.rel-link:hover {
+  transform: translateY(-2px)
+}
+
+.story {
+  line-height: 1.4
+}
+
+/* ---------- responsive ≥ 600px ----------------------------- */
+@media(min-width:600px) {
+  .bottom-row {
+    flex-direction: row
+  }
+
+  .relations {
+    width: 160px;
+    flex-shrink: 0
+  }
+}
+
+/* ============================================================
+   BOTTONI Relazioni – stile iPhone toolbar
+   ============================================================ */
+.rel-link {
+  /* gradiente di sfondo (dall’azzurro pallido al blu più scuro) */
+  background-image:
+    linear-gradient(#ffd0f2 0%, #fff1fe 90%);
+
+  /* bordo e raggi di curvatura simili a quelli JavaFX */
+  border: 1px solid #acacac;
+  border-radius: 1px;
+
+  /* ombra di profondità verso il basso (look glossy) */
+  box-shadow:
+    0 2px 2px rgba(0, 0, 0, 0.25),
+    /* drop-shadow netta */
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  /* lieve highlight interno */
+
+  /* dimensioni & testo */
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  width: 100%;
+  padding: .5rem .8rem;
+  color: #fd9de2;
+  font-size: .85rem;
+  text-decoration: none;
+  transition: transform .1s;
+}
+
+.rel-link:hover {
+  transform: translateY(-2px)
+}
+
+.rel-link:active {
+  transform: translateY(0);
+  /* “premuto” */
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.3) inset,
+    0 0 3px rgba(0, 0, 0, 0.2) inset;
+}

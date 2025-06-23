@@ -82,9 +82,9 @@
         },
         "Corte Marziale": {
             "bio": {
-                "carattere": "",
-                "hobby": "",
-                "lavoro": ""
+                "carattere": "x",
+                "hobby": "x",
+                "lavoro": "x"
             },
             "image": "imgs/corte_marziale_avatar.png"
         }
@@ -97,12 +97,8 @@
                 "🐾 Kia Rosellina🌹"
             ],
             "image": "",
-            "story": "Col pelo 💗 e gli occhi 🫧,📄)😕➡️ (✨💼💭🚀)<br> viveva tra sogni, biscotti e scarabocchi 🖍️.<br>Aveva una voce gentile e precisa,<br> una 🐱 che sapeva cos’è una cosa condivisa.<br> Con Mia giocava da sempre, 🎠 dopo 🎠,<br>ma un giorno disse: “Così non si fa,” e il",
+            "story": "Col pelo 💗 e gli occhi 🫧,<br>viveva tra sogni, biscotti e scarabocchi 🖍️.<br>Aveva una voce gentile e precisa,<br>una 🐱 che sapeva cos’è una cosa condivisa.<br>Con Mia giocava da sempre, 🎠 dopo 🎠,<br>ma un giorno disse: “Così non si fa,” e il gioco finì a metà.",
             "relations": [
-                {
-                    "char": "🪴 Bellavin ​🤙",
-                    "icon": "🫂🏠"
-                },
                 {
                     "char": "🐇 Mia Manina✋",
                     "icon": "🫂💖🔐"
@@ -123,7 +119,6 @@
             "authors": [
                 "🐇 Mia Manina✋"
             ],
-            "image": "",
             "story": "Con le zampe a forma di ✋ e i pensieri a matassa,​<br>non capiva perché Kia avesse quella faccia.<br>Aveva solo detto qualcosa a Solegirò,<br>ma poi la stanza si fece silenzio e gelo ❄️.<br>Da allora guardò Kia con occhi diversi 🪞,<br>come si guarda un abbraccio che non torna più versi.",
             "relations": [
                 {
@@ -155,7 +150,6 @@
                 "🐲​ Antō no Sukerō ​🥊​",
                 "🧖‍♀️Soni-ya 🥠"
             ],
-            "image": "",
             "story": "Fratelli di caos e merenda 🍪,<br>ridevano sempre, anche se nessuno li intendava.<br>Aprivano le porte, lanciavano 🎈,<br>ma non capirono cosa successe quel dì.<br>“Succede,” dissero, “le 👫 a volte si sbucciano come 🍌,”<br>mentre Mia smetteva di ridere con la stessa campana.",
             "relations": [
                 {
@@ -195,7 +189,1029 @@
                     "icon": "🗝️🔗🧬"
                 }
             ]
+        },
+        {
+            "id": "ep1-solegiro",
+            "episode": 1,
+            "authors": [
+                "🌻​ Solegirò Giragirò 🦶​"
+            ],
+            "image": "",
+            "story": "Con i petali a spirale 🔄 e i piedi profumo fiori 🌸,<br>non parlava spesso, ma sentiva gli umori.<br>Quel giorno si sentì punto da parole come spilli 🧷,<br>e Kia si alzò con lo sguardo dei grilli 🦗.<br>Difese con calma, con tono gentile,<br>ma nel farlo spaccò qualcosa di fragile.",
+            "relations": [
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep2-topozione",
+            "episode": 2,
+            "authors": [
+                "🐭 To’ Pozione 🥬​"
+            ],
+            "image": "",
+            "story": "Taglia la menta con forbici d’oro ✂️🌱,<br>annusa una bava trovata nel foro. 🕳️🧪<br>Scrive su vetro formule a caso,<br>mentre un dito gli scivola dentro il mortaio. ☝️🌀<br>Versa nel flacone un pensiero sospeso,<br>poi fischia alla luna con l’occhio socchiuso. 🌕🎶",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🤷‍♂️😒"
+                }
+            ]
+        },
+        {
+            "id": "ep2-mia",
+            "episode": 2,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Lega un nastro attorno al bicchiere 🎀🥛,<br>sorride al riflesso e lo morde per bene. 🪞😬<br>Cammina tre volte attorno al portone, 🚪🚶‍♀️🚶‍♀️🚶‍♀️<br>poi scrive \"TI AMO\" sul muro col sapone. 🧼💘<br>Nasconde il flacone nella manica lunga,<br>mentre sotto le unghie la gelosia punge. 💅🔥",
+            "relations": [
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖➡️🪦"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "❤️‍🔥🥴"
+                },
+                {
+                    "char": "🐭 To’ Pozione 🥬​",
+                    "icon": "😈🙏"
+                }
+            ]
+        },
+        {
+            "id": "ep2-kia",
+            "episode": 2,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Apre la finestra, poi la richiude 🪟🔁,<br>resta in pigiama e conta le nuvole. ☁️🛏️<br>Accarezza Bellavìn senza guardarlo,<br>parla nel vuoto con tono teatrale. 🎭🌿<br>Fa una crostata e non la assaggia, 🥧🙅‍♀️<br>scrive il suo nome con lo stecco sulla sabbia. ✍️🏖️",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🏠"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖🔐"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "💌🙊"
+                }
+            ]
+        },
+        {
+            "id": "ep3-soniya",
+            "episode": 3,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Scatta a un 🌼 che sbuca dall’asfalto,<br>sente un clic, poi un brivido alto. 📸🩻<br>Corre 🏃‍♀️— ma la finestra è aperta,<br>e dentro c’è ✋ che versa inofferta.<br>Sorride, all’inizio: “🎭? Sarà un gioco…”<br>poi suo fratello si piega, e il tempo è poco. ⏳💭",
+            "relations": [
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🗝️🔗🧬"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂😦"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep3-mia",
+            "episode": 3,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Pulisce il bicchiere col bordo di 👅,<br>mescola il tutto col tatto di una 👻.<br>“È solo tisana!” ride, lasciando la busta, 📄💧<br>mentre le pupille le fanno la giostra. 🎡<br>Antō la beve, lei resta lì muta,<br>pensando “se funziona, mi scrive su flutta.” 🍐📱",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "❤️‍🔥🥴"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "🫂"
+                }
+            ]
+        },
+        {
+            "id": "ep3-anto",
+            "episode": 3,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "Dice “buona!” poi sente il 🔔,<br>la testa gli fischia come una cartel. 🚑🎶<br>Si gratta la fronte, vede triplo:<br>Mia, un cactus e Soni in un ciclo. 🌵🔁<br>Poi ride, ma è un po’ storto il suono,<br>come se il pavimento fosse fatto di tonno. 🐟🤕",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🗝️🔗🧬"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "😒🙄"
+                }
+            ]
+        },
+        {
+            "id": "ep3-solegiro",
+            "episode": 3,
+            "authors": [
+                "🌻​ Solegirò Giragirò 🦶​"
+            ],
+            "image": "",
+            "story": "Lascia un messaggio inciso nel vento, 💨✍️<br>a BrumBrum che ormai è solo un accento. 🐻🔕<br>Erano 🌪️ e 🌤️ — troppo discordi,<br>ora camminano in orbite tordi. 🐦🪐<br>Lei gira su sé come spirale infinita,<br>mentre si domanda se l’amore è una gita. 🎠💔",
+            "relations": [
+                {
+                    "char": "🐻 BrumBrum Orso Brun ​🏍️",
+                    "icon": "🧠➡️💔"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep3-brumbrum",
+            "episode": 3,
+            "authors": [
+                "🐻 BrumBrum Orso Brun ​🏍️"
+            ],
+            "image": "",
+            "story": "Beve 🍵 da solo, guarda il suo zaino,<br>ci trova ricordi e una foglia di pino. 🌲📸<br>Ama ancora, ma senza più fame,<br>l’amore non basta se dormi con rame. 🛏️🧲<br>Scrive a Solegirò una frase a metà,<br>poi la cancella con la zampa che va. 🐾✖️",
+            "relations": [
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "❤️‍🔥➡️💔"
+                }
+            ]
+        },
+        {
+            "id": "ep4-mia",
+            "episode": 4,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Sorride con 🍓 tra i denti e veleno nel tono,<br>accarezza le pagine finché To’ dice “buono.” 📖💋<br>“Solo un’ultima volta,” gli sussurra al papillon, 🐭🎀<br>mentre scivola piano tra flaconi e illusion. 🧪🫧<br>Sa che Antō non sente, non vede, non vuole,<br>ma un sorso ben fatto può confondere il sole. 🌞🥴",
+            "relations": [
+                {
+                    "char": "🐭 To’ Pozione 🥬​",
+                    "icon": "😈🙏"
+                }
+            ]
+        },
+        {
+            "id": "ep4-topozione",
+            "episode": 4,
+            "authors": [
+                "🐭 To’ Pozione 🥬​"
+            ],
+            "image": "",
+            "story": "Conosce le 📝 e le curve del cuore,<br>ma cede a Mia, più forte dell’errore.<br>È la quinta pozione, l’etichetta dice: “forse”,<br>il flacone trema, ma la logica si torce. 🧠🔄<br>“Non è amore, è un trucco,” pensa nel mentre,<br>ma i suoi occhi si spengono… e le dita acconsentono. 💧🫣",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "💭💕"
+                }
+            ]
+        },
+        {
+            "id": "ep4-anto",
+            "episode": 4,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "Ride con Bellavìn, parla piano tra 🍻,<br>ma dentro la nebbia e riflessi di panna. ☁️🪞<br>“Mi piace,” dice, grattandosi il collo,<br>mentre il pensiero inciampa e va a mollo. 💭🌊<br>“Ma scusa,” dice Bellavìn, “non l’hai sempre trovata noiosa?”<br>Antō annuisce… e il bicchiere gli scotta la gola. 🔥🥃",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "💘😵‍💫"
+                },
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🔐"
+                }
+            ]
+        },
+        {
+            "id": "ep4-bellavin",
+            "episode": 4,
+            "authors": [
+                "🪴 Bellavin ​🤙"
+            ],
+            "image": "",
+            "story": "Sbuffa polline e sarcasmo dai pori, 🌫️😒<br>ha foglie taglienti e giudizi coriacei.<br>“Ti vedo strano da quando hai bevuto,”<br>dice sfiorandogli il polso con un rametto muto. 🪴🤏<br>Sa riconoscere un incantesimo d’amore,<br>e quel profumo? Sa di errore. 🍶🚫",
+            "relations": [
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🫂🔐"
+                }
+            ]
+        },
+        {
+            "id": "ep5-soniya",
+            "episode": 5,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "📸 Fotografa un cavo, poi lo cancella,<br>taglia le 🍃 con la sua cartellina gialla.<br>Fa finta di stirare ma ascolta il muro, 🧺👂<br>scrive un codice sul pane più duro. 🥖🔢<br>Sbottona la scarpa, poi chiude la porta, 👟🚪<br>indaga su qualcosa di cui si è accorta. 👀",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🧐❓"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🗝️🔗🧬"
+                }
+            ]
+        },
+        {
+            "id": "ep5-mia",
+            "episode": 5,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Aggiusta un 💄 che non ha mai messo,<br>parla col frigo e chiude il cassetto. 🧊📁<br>Canta una strofa che non ha senso, 🎶❓<br>poi manda tre emoji con tono intenso. 😈🫣🌸<br>Compra due 🧃 ma ne beve mezzo,<br>e guarda il bicchiere come fosse un prezzo. 👀💳",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🤔💭"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "❤️‍🔥🥴"
+                },
+                {
+                    "char": "🐭 To’ Pozione 🥬​",
+                    "icon": "❌💕"
+                }
+            ]
+        },
+        {
+            "id": "ep5-topozione",
+            "episode": 5,
+            "authors": [
+                "🐭 To’ Pozione 🥬​"
+            ],
+            "image": "",
+            "story": "Piega i 🌿 come se avessero nomi,<br>indossa un 🧥 con sei tipi di aromi.<br>Disegna un ❤️ su un barattolo vuoto,<br>poi lo nasconde sotto al cappotto. 🧪🫠<br>Consegna un anello a una pianta del bagno,<br>e dice “sì” prima che arrivi il danno. 💍🚽🌿",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "💍💕"
+                }
+            ]
+        },
+        {
+            "id": "ep5-anto",
+            "episode": 5,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "Sbatte un 🧃, ride al ✋ sbagliato,<br>parla col vetro come fosse animato. 🪟💬<br>Si gratta la testa in modalità loop, 🔁🤯<br>e saluta una sedia chiamandola \"Snoop\". 💺👋<br>Cammina con un passo troppo rotondo,<br>come se il pavimento fosse un secondo mondo. 🌍🧼",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "😍😵‍💫"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🗝️🔗🧬"
+                }
+            ]
+        },
+        {
+            "id": "ep6-soniya",
+            "episode": 6,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Sfoglia la 🔮 tra due panni stesi,<br>i pollici tremano, i vetri sono accesi. 🪟💡<br>Nessuno deve sapere del 🧠 che si spalanca,<br>del nome “Mia” che le punge la panca. 🪑🕷️<br>Scrive una X su una foglia di riso,<br>poi la mangia con il viso inciso. 🍚✍️",
+            "relations": [
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "⚠️❗"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep6-anto",
+            "episode": 6,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "Ride troppo, brinda a niente,<br>chiama “amore” quella mano assente. 🍾✋<br>Parla di Mia come fosse una stella,<br>mentre Kia si scioglie, muta e ribella. ⭐😶<br>Non sa del sangue tra foglie e finestre,<br>né della voce che dorme tra le ceste. 🧺🩸",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🗝️🔗🧬"
+                },
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🔐"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep6-topozione",
+            "episode": 6,
+            "authors": [
+                "🐭 To’ Pozione 🥬​"
+            ],
+            "image": "",
+            "story": "Apre la 🧳 con mani fasciate,<br>una 🌻 dorme tra cose annodate.<br>Parla da solo con voce gentile,<br>pianta semi in un pentagono d’argilla. 🪴🔺<br>Dice: “un fiore non chiede il permesso,”<br>poi ride piano… e fa posto a se stesso. 😶‍🌫️🧪",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "😭💔"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "👹👿"
+                }
+            ]
+        },
+        {
+            "id": "ep6-bellavin",
+            "episode": 6,
+            "authors": [
+                "🪴 Bellavin ​🤙"
+            ],
+            "image": "",
+            "story": "Si sveglia col 🍂 sotto un occhio chiuso,<br>c’è linfa sul cuscino, e un taglio diffuso. 🛏️🩸<br>Non ricorda chi, ma ha visto ombre,<br>tra le pareti, le spine, le tombe. 🕳️🌫️<br>Racconta a Kia di risate sbagliate,<br>di un brindisi in cui 💘 fu dichiarato a rate. 🍷🫥",
+            "relations": [
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂🏠"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🫂🔐"
+                }
+            ]
+        },
+        {
+            "id": "ep6-kia",
+            "episode": 6,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Accarezza Bellavìn senza parlare, 🐾<br>le orecchie basse, il cuore da legare. 🧵💔<br>Guarda la 📦 con lettere mai spedite,<br>i sogni rotti in quattro righe svanite. ✉️❌<br>Sente dire che Antō ama Mia…<br>ma il cielo non piange — solo lei, di scia. 🌧️🥲",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🏠"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "💌🙊"
+                }
+            ]
+        },
+        {
+            "id": "ep6-solegiro",
+            "episode": 6,
+            "authors": [
+                "🌻​ Solegirò Giragirò 🦶​"
+            ],
+            "image": "",
+            "story": "Non danza più, si piega al mattino,<br>conta semi nel grembo divino. 🌱🕊️<br>Vede mura fatte di suono e paura,<br>non sa se è sogno o clausola oscura. 🔒🫧<br>Tiene stretta una ninna di vento,<br>mentre il tempo marcisce lento. 🕰️🍂",
+            "relations": [
+                {
+                    "char": "🐭 To’ Pozione 🥬​",
+                    "icon": "⚠️🤐"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep7-mia",
+            "episode": 7,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Chiude tre zip senza avere borsetta, 🧳🙅‍♀️<br>offre a Soni un 🍪 con voce stretta.<br>Dice: “gioca normale, fai il sorriso”, 😊🔒<br>poi mostra una 🔦 sotto al viso.<br>Cammina in cerchio coi guanti di pizzo, 🧤🩰<br>e accarezza la legge col dito fittizio. 📜🫥",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "😱😡"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "❤️‍🔥🥴"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖➡️🪦"
+                }
+            ]
+        },
+        {
+            "id": "ep7-soniya",
+            "episode": 7,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Sorride coi denti ma scivola dentro,<br>nasconde la 📸 sotto al 👗 spento.<br>Disegna l’orario su un’arancia incisa,<br>e infila segreti sotto la camicia. 🍊🤐<br>Va a trovare Kia con passo incespicato,<br>ogni stretta di ✋è un 📄 firmato.",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "⚠️😱"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "⚠️❗"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep7-kia",
+            "episode": 7,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Appende lanterne a testa in giù,<br>ogni luce riflette un “lo so già” muto. 🏮😶<br>Serve 🍵 con finta sorpresa,<br>e regala a Mia una 🪴 offesa. 😒<br>Parla del tempo come se avesse spine,<br>ma sorride: “benvenuta tra le mie vetrine.” 🪟",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖➡️🪦"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖🔐"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "💌🙊"
+                }
+            ]
+        },
+        {
+            "id": "ep7-anto",
+            "episode": 7,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "Conta 💌 che non ha mai ricevuto,<br>scrive “Mia” sul vapore di un vetro muto. 🪟🖊️<br>Ride al nome come fosse una canzone,<br>non sente l’aria, non vede il mattone. 🎶🎭<br>Mastica 🌸 con la fronte che pulsa,<br>senza sapere che tutto si sbilancia. 🧠⛓️",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🗝️🔗🧬"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "😍😵‍💫"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep8-soniya",
+            "episode": 8,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Tiene la 🥢 a testa in giù,<br>fa saltare un 🍣 come fosse un indizio.<br>Mia strizza l’occhio, lei tira su il mento, 🙄👁️<br>dice piano: “non sai col fuoco che sento.” 🔥🪞<br>Scivola un nome tra i 🍷pieni,<br>e la tavola ride, ma Kia trattiene i freni. 😶🫢",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "😡🫵"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep8-mia",
+            "episode": 8,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Fa finta di tossire con un dito alzato,<br>ma il 🍥 le gira come un fato spezzato.<br>Spalanca un sorriso che gronda 🙃,<br>poi sussurra: “...non fare la tonda.”<br>Ma la voce trema, il 🧊 si spacca,<br>mentre Soni-ya la guarda con faccia che stacca. 👁️🚫",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🤥😡"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🪦👿"
+                }
+            ]
+        },
+        {
+            "id": "ep8-kia",
+            "episode": 8,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Raccoglie un 🧄 caduto dal piatto,<br>e sente il 🌍 fare uno scatto. ⚡<br>Non dice niente ma il tè sa di pietra,<br>e il cuore batte come tamburo in vetta. 🫖💔<br>Guarda Mia: “è vero?” — non serve parola,<br>le orecchie si abbassano, e una luna vola. 🌙😿",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🪦💔"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖🔐"
+                }
+            ]
+        },
+        {
+            "id": "ep9-kia",
+            "episode": 9,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Lancia un 🍓 contro il muro spento,<br>“Tu sapevi!” — è un vento violento. 🌬️😾<br>Le zampine tremano sul bordo del tavolo,<br>“Eri la mia 🤝… ma ora sembri un oracolo.”<br>Le lacrime scendono in punta di coda, 🐈💧<br>ma gli occhi bruciano come soda. 🫗🔥",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🪦💔🤬"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep9-mia",
+            "episode": 9,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Ride amara con la ☕in bilico, 😐<br>dice: “il ❤️ non si regola con il calcolo.”<br>Fa schioccare le dita sul vetro del vaso,<br>e finge di non vedere l’amore a caso. 🌷👀<br>“Non sono cattiva, sei solo lenta,”<br>poi guarda Kia… e la voce diventa assente. 🫥🪞",
+            "relations": [
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🪦👿"
+                },
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "🫂"
+                }
+            ]
+        },
+        {
+            "id": "ep9-mammmmmmmalga",
+            "episode": 9,
+            "authors": [
+                "👩‍🦰​ Mammmmmmmalga 🌱​"
+            ],
+            "image": "",
+            "story": "Bussa alle 🚪con 🌼tra i denti,<br>dice “Avete visto mia figlia nei venti?”<br>Tiene una 📸 rotta sul petto scoperto,<br>ripete “era qui”, ma lo dice nel 🏜️.<br>Pensa a BrumBrum con occhi sospetti,<br>e annusa le ​✉️​, i margini stretti.",
+            "relations": [
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "👩‍👧💝"
+                },
+                {
+                    "char": "🐻 BrumBrum Orso Brun ​🏍️",
+                    "icon": "🔫🤨"
+                }
+            ]
+        },
+        {
+            "id": "ep9-brumbrum",
+            "episode": 9,
+            "authors": [
+                "🐻 BrumBrum Orso Brun ​🏍️"
+            ],
+            "image": "",
+            "story": "Sta zitto, ma ha un 🌪️ in tasca,<br>guarda le 🌌 come fossero 🎭.<br>Parla con un ramo e una giacca vuota,<br>“lei era già rotta.” 🌿🧥<br>Beve da un lago che non lo riflette,<br>e 🖋️ “colpa” sulle sue 🍫.",
+            "relations": [
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "💔➡️😭"
+                },
+                {
+                    "char": "👩‍🦰​ Mammmmmmmalga 🌱​",
+                    "icon": "🙄💢"
+                }
+            ]
+        },
+        {
+            "id": "ep9-solegiro",
+            "episode": 9,
+            "authors": [
+                "🌻​ Solegirò Giragirò 🦶​"
+            ],
+            "image": "",
+            "story": "C'è un 🛏️vuoto, una 🪟aperta,<br>un petalo sul cuscino, e un'ombra incerta.<br>Nessuno sa se cercava o 🚶‍♀️dai problemi,<br>ma il suo segreto sono proprio i suoi semi. 🌱<br>Forse 🎤​ a voce bassa tra i rami,<br>forse qualcuno potrebbe allungare le 🫴.",
+            "relations": [
+                {
+                    "char": "🐻 BrumBrum Orso Brun ​🏍️",
+                    "icon": "💔➡️❤️‍🩹"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep10-kia",
+            "episode": 10,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Segna col 💄 ogni pista sul muro,<br>“non penso più a ✋, adesso è futuro.”<br>Cammina con Soni-ya tra i petali persi,<br>ogni curva sembra parlare in versi. 🌀🗺️<br>Tiene il fiato tra i denti e una 📎 nel pelo,<br>“chi mente stavolta… lo scopro davvero.” 👁️🧵",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🫂🏠"
+                },
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep10-soniya",
+            "episode": 10,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Scatta 👟 su foglie appassite,<br>ogni clic una ferita riscritta. 📸🍂<br>Dice: “non parlo più con le mani false,”<br>e fissa la linfa con pupille ruvide. 🧪🩸<br>A Kia sussurra: “questa puzza la conosco,”<br>poi chiude il 🗃️ come un cuore tosto.",
+            "relations": [
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂💖"
+                }
+            ]
+        },
+        {
+            "id": "ep10-mammmmmmmalga",
+            "episode": 10,
+            "authors": [
+                "👩‍🦰​ Mammmmmmmalga 🌱​"
+            ],
+            "image": "",
+            "story": "Raccoglie petali come 💌 strappate,<br>li mette nel grembo, tra pieghe fatate. 🌼👝<br>“Sta cambiando,” mormora al cielo,<br>“una vita nasce… ma muore il suo stelo.” 🌱🖤<br>Segue l’odore, trova linfa densa,<br>le mani tremano: “non è una coincidenza.” 🌫️👃",
+            "relations": [
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "👩‍👧⚠️"
+                },
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🔫😡"
+                }
+            ]
+        },
+        {
+            "id": "ep10-bellavin",
+            "episode": 10,
+            "authors": [
+                "🪴 Bellavin ​🤙"
+            ],
+            "image": "",
+            "story": "Grida dal vetro con voce dispiaciuta,<br>“non so chi è stata, ma la storia è cucita!” 🚔🧃<br>Le radici scosse, il gambo legato,<br>uno stelo 🌿 in cella, ingiustamente incastrato.<br>Ripete “Sole!” nel sonno svanito,<br>mentre il veleno resta... non ancora svenduto. 🧪💔",
+            "relations": [
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🫂🏠"
+                }
+            ]
+        },
+        {
+            "id": "ep10-topozione",
+            "episode": 10,
+            "authors": [
+                "🐭 To’ Pozione 🥬"
+            ],
+            "image": "",
+            "story": "Sorride tra 💼 e carte segrete,<br>lascia linfa finta tra foglie indiscrete. 🧃📎<br>Dice: “la giustizia è come il tè caldo,”<br>basta mescolare il giusto e non c’è più scarto. 🍵😼<br>Sotto al papillon, un nodo più stretto,<br>e nei suoi occhi? Nessun sospetto. 🧠🪡",
+            "relations": [
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "💍👨‍👩‍👦😈"
+                }
+            ]
+        },
+        {
+            "id": "ep11-soniya",
+            "episode": 11,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Bussa a Mammmmmmmalga con petali in mano, 🌸🚪<br>“ho visto tua figlia nel sogno lontano.” 🌙🔮<br>S’immerge in visioni, si spezza ogni sera,<br>scrive e riscrive con la sua sfera. ✍️📜<br>Ma apre un cassetto, legge il finale:<br>“per parlare… mi serve un addio totale.” ⚰️🕳️",
+            "relations": [
+                {
+                    "char": "👩‍🦰​ Mammmmmmmalga 🌱​",
+                    "icon": "🆘🗣️"
+                }
+            ]
+        },
+        {
+            "id": "ep11-mammmmmmmalga",
+            "episode": 11,
+            "authors": [
+                "👩‍🦰​ Mammmmmmmalga 🌱​"
+            ],
+            "image": "",
+            "story": "Tiene il respiro tra gomitoli e aghi, 🧵🫁<br>“se sai dov’è, dimmi dove vaghi.” 🗺️👁️<br>Apre le mani, lascia andare un petalo,<br>Soni-ya abbassa lo sguardo, ha un cuore in metallo. 🌼🧷<br>Lei urla: “Ti prego!”, ma il biscotto si chiude,<br>e l’oracolo… indietreggia tra le nebbie mute. 🌫️🥠",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "❣️💫"
+                }
+            ]
+        },
+        {
+            "id": "ep12-soniya",
+            "episode": 12,
+            "authors": [
+                "🧖‍♀️Soni-ya 🥠"
+            ],
+            "image": "",
+            "story": "Sale le scale col cuore in 📦,<br>davanti ai lettori, silenzio di 👁️ e matasse.<br>\"Ho visto per amore, non per potere!\"<br>ma le carte girano come foglie al 🍂 cadere.<br>Chiude le gambe, spezza il pensiero,<br>e il suo biglietto... rimane intero. 🥠🔒",
+            "relations": [
+                {
+                    "char": "👩‍🦰​ Mammmmmmmalga 🌱​",
+                    "icon": "🆘⚠️"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "🗝️🔗🧬"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🥺💖"
+                }
+            ]
+        },
+        {
+            "id": "ep12-mammmmmmmalga",
+            "episode": 12,
+            "authors": [
+                "👩‍🦰​ Mammmmmmmalga 🌱​"
+            ],
+            "image": "",
+            "story": "Punta il dito, col grembiule in ⚡,<br>“ha varcato la soglia, ora si sta zitta!” 📢⚖️<br>Sogna la figlia tra semi e pareti,<br>ma urla \"giustizia!\" per notti e per metri.<br>Non vede che il cuore è già bruciato,<br>in ogni visione che ha condannato. 🕯️💢",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "⚠️🙅‍♀️"
+                }
+            ]
+        },
+        {
+            "id": "ep12-kia",
+            "episode": 12,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Sta in piedi con il petalo appannato 🎀😔,<br>stringe la zampa, lo sguardo incrociato.<br>Dice: “non è un mostro, ha solo sbagliato,”<br>poi guarda Antō… e resta bloccata.<br>Le dita tremano, ma resta sincera,<br>e in quel silenzio… la sua primavera. 🌸👁️",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🫂💖"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "💌🥺"
+                }
+            ]
+        },
+        {
+            "id": "ep12-anto",
+            "episode": 12,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "Parla piano, poi guarda a destra,<br>vede Kia, e sente la testa leggera. 🧠💫<br>“La legge è legge”, dice al giudice muto,<br>ma il suo cuore sussurra un altro saluto.<br>Dove prima c’era il nome ✋ scolpito,<br>ora solo “🌸” rimane inciso.",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🙏🫀"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🤮😤"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "💭❣️"
+                }
+            ]
+        },
+        {
+            "id": "ep12-corte",
+            "episode": 12,
+            "authors": [
+                "Corte Marziale​"
+            ],
+            "image": "",
+            "story": "uccidilauccidilauccidilauccidilauccidilauccidila",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "⚠️🙅‍♀️"
+                }
+            ]
+        },
+        {
+            "id": "ep13-anto",
+            "episode": 13,
+            "authors": [
+                "🐲​ Antō no Sukerō ​🥊​"
+            ],
+            "image": "",
+            "story": "⚖️ batte il martelletto, la sala respira,<br>sua sorella condannata, la mente si gira.<br>Mastica rabbia come semi di sale, 🌱🧂<br>le mani tremano, il cuore va a scale.<br>Nel buio più nero, nessun incantesimo,<br>solo un nome: 🌸 — il suo unico pendolo.",
+            "relations": [
+                {
+                    "char": "🧖‍♀️Soni-ya 🥠",
+                    "icon": "🙏🫀"
+                },
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "🤮😤"
+                },
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "😍🫀"
+                }
+            ]
+        },
+        {
+            "id": "ep13-kia",
+            "episode": 13,
+            "authors": [
+                "🐾 Kia Rosellina🌹"
+            ],
+            "image": "",
+            "story": "Scavalca l’orgoglio coi gomiti stretti,<br>bussa ✋ alla tana dai vetri riflessi.<br>Dice “🧪 o silenzio, scegli tu il posto”,<br>ma negli occhi ha una mappa d’agosto. 🗺️🔥<br>Un sorso per salvare, una colpa a metà,<br>se affoghi con me… nessuno saprà. 🤫💧",
+            "relations": [
+                {
+                    "char": "🐇 Mia Manina✋",
+                    "icon": "😮‍💨💢"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "❤️‍🔥🥺"
+                }
+            ]
+        },
+        {
+            "id": "ep13-mia",
+            "episode": 13,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Sgrana le unghie con faccia di Luna, 🌕💅<br>\"Un’altra pozione? Che buffa fortuna.”<br>Ma ascolta Kia, si ferma, poi ride:<br>“Vuoi salvarla, o vuoi che si chiuda il confine?” 🌫️<br>Apre lo scaffale con dita lente,<br>“Uno per lei... e uno per te, se mente.” 🧴🧴",
+            "relations": [
+                {
+                    "char": "🐾 Kia Rosellina🌹",
+                    "icon": "🪦🤡"
+                },
+                {
+                    "char": "🐲​ Antō no Sukerō ​🥊​",
+                    "icon": "😵❤️‍🩹"
+                }
+            ]
+        },
+        {
+            "id": "ep14-topozione",
+            "episode": 14,
+            "authors": [
+                "🐭 To’ Pozione 🥬"
+            ],
+            "image": "",
+            "story": "Sfoglia 🌿 come fossero carne,<br>strappa petali, non vuole farsene un’idea blanda.<br>🔪 dita leggere, sguardo da muro,<br>\"una vita nascerà dal 🌼più puro.\"<br>Parla da solo, nel silenzio che pesa,<br>\"l’amore si crea... anche senza l’attesa.\" 🧬",
+            "relations": [
+                {
+                    "char": "🌻​ Solegirò Giragirò 🦶​",
+                    "icon": "💍👨‍👩‍👦😈"
+                }
+            ]
+        },
+        {
+            "id": "ep14-mia",
+            "episode": 14,
+            "authors": [
+                "🐇 Mia Manina✋"
+            ],
+            "image": "",
+            "story": "Nel 📜 proibito la formula gira,<br>\"se si spegne, si accende con l’ira.\" 🎼<br>Non guarda più indietro, non sente la legge,<br>solo il cuore le pulsa, la mente sorregge.<br>Sussurra un nome nel calderone in fiamme, 🪄🔥<br>e dal fumo… una sorella si chiama. 🥠🌫️",
+            "relations": [
+                {
+                    "char": "🐭 To’ Pozione 🥬",
+                    "icon": "😒🌩️"
+                }
+            ]
+        },
+        {
+            "id": "ep14-bellavin",
+            "episode": 14,
+            "authors": [
+                "🪴 Bellavin ​🤙"
+            ],
+            "image": "",
+            "story": "Con il taglio in pancia e il muschio in bocca,<br>si rialza tra spine, la linfa trabocca. 🌱🩸<br>“Mi avete incolpato, ma ora sto dritto,”<br>urla nel vento con sguardo afflitto.<br>Da pianta a bestia, da veleno a fuoco, 🌪️🌿<br>la vendetta è un fiore… che sboccia poco. 🥀🔥",
+            "relations": [
+                {
+                    "char": "🪴 Bellavin ​🤙",
+                    "icon": "🤕🚀🔥"
+                }
+            ]
         }
-        
     ]
 }
