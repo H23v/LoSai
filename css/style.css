@@ -475,9 +475,9 @@ html {
 /*----SFONDO----*/
 
 body:not(.cover) {
-  background-image: url('../imgs/feed_bg.jpg');
+  background-image: url('../imgs/feed_bg.gif');
   background-repeat: repeat;
-  background-size: 20rem;
+  background-size: 30rem;
   background-attachment: fixed;
   background-color: var(--cream);
   /* fallback se l’immagine non carica */
